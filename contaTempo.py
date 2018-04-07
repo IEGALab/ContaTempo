@@ -1,4 +1,5 @@
 """
+IEGA - Grupo de pesquisa em Inovação Engenharia e Gestão do Conhecimento
 Programa simples para somar tempos de videos de you tube
 by Joao Santanna - jsantanna@gmail.com - 7 abril de 2018
 
@@ -17,7 +18,6 @@ Informe o tempo a ser somado:(-1 para sair)
 >8:58
 >-1
 tempo total = 0 : 17 : 41
-
 """
 
 
