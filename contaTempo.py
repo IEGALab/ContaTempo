@@ -21,34 +21,40 @@ tempo total = 0 : 17 : 41
 """
 
 
-print("Programa Conta Tempo")
-tempo =0
-hora = 0
-minutos = 0
-segundos = 0
-print("Informe o tempo a ser somado:(-1 para sair)")
-while True:
-    tempo = input(">")
-    if tempo != "-1":
-        v = tempo.split(':')
-        if len(v) == 1:# se só informar o minuto
-            minutos = minutos + int(v[0])
-            if minutos > 60:
-                hora = hora + 1
-                minutos = minutos - 60
+def informa_tempos():
+    tempo =0
+    hora = 0
+    minutos = 0
+    segundos = 0
+    while True:
+        tempo = input(">")
+        if tempo != "-1":
+            v = tempo.split(':')
+            if len(v) == 1:# se só informar o minuto
+                minutos = minutos + int(v[0])
+                if minutos > 60:
+                    hora = hora + 1
+                    minutos = minutos - 60
+            else:
+                segundos = segundos + int(v[1])
+                if segundos > 60:
+                    minutos = minutos + 1
+                    segundos = segundos - 60
+
+                minutos = minutos + int(v[0])
+                if minutos > 60:
+                    hora = hora + 1
+                    minutos = minutos - 60
+
+
         else:
-            segundos = segundos + int(v[1])
-            if segundos > 60:
-                minutos = minutos + 1
-                segundos = segundos - 60
+            break
 
-            minutos = minutos + int(v[0])
-            if minutos > 60:
-                hora = hora + 1
-                minutos = minutos - 60
+    return(hora, minutos, segundos)
 
+print("Programa Conta Tempo")
 
-    else:
-        break
+print("Informe o tempo a ser somado:(-1 para sair)")
+resultado = informa_tempos()
 
-print("tempo total =", hora,":",minutos,":", segundos)
+print("tempo total =", resultado[0],":",resultado[1],":",resultado[2])
