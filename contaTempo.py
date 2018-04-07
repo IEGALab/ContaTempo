@@ -1,5 +1,6 @@
 """
 Programa simples para somar tempos de videos de you tube
+by Joao Santanna - jsantanna@gmail.com - 7 abril de 2018
 
 Uso:
 Iforme os tempos usando os dois pontos ":" para separar minutos de segundos
