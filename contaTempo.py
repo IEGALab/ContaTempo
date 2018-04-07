@@ -1,5 +1,26 @@
+"""
+Programa simples para somar tempos de videos de you tube
 
-print("programa soma tempo")
+Uso:
+Iforme os tempos usando os dois pontos ":" para separar minutos de segundos
+ao final digite -1 para sair e apresentar o somatorio de temposself.
+
+Exemplo :
+Calcular o somatorio de 3 videos: um com 3minutos e 30 segundos,
+outro com 5 minutos e 13 seguntos e o ultimo com 8minutos e 58 segundos
+
+Programa Conta Tempo
+Informe o tempo a ser somado:(-1 para sair)
+>3:30
+>5:13
+>8:58
+>-1
+tempo total = 0 : 17 : 41
+
+"""
+
+
+print("Programa Conta Tempo")
 tempo =0
 hora = 0
 minutos = 0
